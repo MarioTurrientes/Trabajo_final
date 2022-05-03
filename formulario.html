@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <link rel="icon" href="Img/favicon.png">
+        <title>TRABAJA CON NOSOTROS</title>
+        <link rel="stylesheet" href="formulario.css">
+    </head>
+
+    <body>
+        <div id="caja">
+
+            <h1>Trabaja con nosotros</h1>
+            <br>
+		<form>
+		
+			<fieldset> <!-- Agrupar elementos del formilario -->
+			<legend>Datos del trabajador</legend>	<!-- Titulo de la caja que agrupa los elementos-->
+				<br>
+				<label for="name">Nombre</label>   <!-- enunciado -->
+				<input type="text" id="name" name="name" placeholder="Nombre">	  <!-- entrada texto -->
+			
+				<input type="text" id="lname" name="lname" placeholder="Apellidos">
+				<br>
+				
+				<br>
+				<label id="telefono">Teléfono </label>
+                <input type="tel" id="Teléfono" name="Usuario" placeholder="9 números"  size="9" maxlength="9" pattern="[0-9]">
+                
+                <label id="codigo">Codigo Postal</label>
+                <input type="tel" id="postal" name="postal" placeholder="postal"  size="5" maxlength="5" pattern="[0-9]">
+                
+                <label for="pais">Pais</label>
+				<input type="text" id="pais" name="pais" placeholder="Pais">
+                
+                <label for="name">Ciudad</label>
+				<input type="text" id="ciudad" name="ciudad" placeholder="Ciudad">
+                <br>
+
+                <br>
+                <label id="correo">Correo electrónico </label>
+                <input type="email" id="Correo" name="Usuario" placeholder="nombre+@+servidor de correo"  size="50" autocomplete="on">
+                <br>
+
+                <br>
+                <label id="seleccion">Fecha nacimiento</label>
+                <input type="date"  max="2022-12-31"  size="20">
+                <br>
+
+                <br>
+                <label id="puesto">Puesto</label><br>
+                <select name="menu">
+                    <optgroup label="Dependiente">
+                        <option value="A">zapatos</option>
+                        <option value="B">ropa</option>
+                    </optgroup>
+                    <optgroup label="Caja">
+                        <option value="1">seccion hombres</option>
+                        <option value="2">seccion mujeres</option>
+                        <option value="3">seccion niñ@s</option>
+                    </optgroup>
+                </select>
+			</fieldset>
+			<br>
+			
+			<fieldset>
+                <legend>Disponibilidad</legend>
+				
+				<!-- SI queremos que una opcion este por defecto marcada pondremos checked="marcada" -->
+                <input type="radio" name="Disponibilidad" value="Mañanas">Mañanas
+				
+                <input type="radio" name="Disponibilidad" value="Tardes">Tardes
+				
+                <input type="radio" name="Disponibilidad" value="Cualquiera">Cualquiera
+				<br>
+
+                <br>
+                <input type="radio" name="Disponibilidad" value="semena">Entre semana
+				
+                <input type="radio" name="Disponibilidad" value="Findes">Fin de semanas
+				
+                <input type="radio" name="Disponibilidad" value="Todo">Toda la semana
+				<br>
+
+            </fieldset>
+            <br>
+
+            <fieldset>
+                
+                <label for="CV">Dejanos tu CV</label> 
+                <input type="file" accept="*" id="CV">
+
+            </fieldset>
+
+            <br>
+            <fieldset>
+                <legend>Terminos de privacidad</legend>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. 
+                    Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus 
+                    et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
+                    ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis 
+                    enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. 
+                    In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+                    Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
+                    Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. 
+                    Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+                    Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. 
+                    Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
+                    Aenean imperdiet.</p>
+                <label id="aceptar">Si, acepto las condiciones</label>
+                <input type="checkbox" name="aceptar"  value="">
+            </fieldset>
+
+			<br>
+			<!-- El tipo checkbox la casilla es un tick -->
+            <label for="aviso">Me gustaría ser avisado por email sobre nuevas ofertas</label>
+            <input type="checkbox" name="aviso" id="aviso" checked="checked">
+			<br>
+			
+			<br>
+			<input type="submit" value="Enviar" id="boton">  <!-- Boton de enviar con submit-->
+			<input type="reset" value="Borrar" id="boton1">	  <!-- con reset borrar los datos introducidos -->
+
+        </form>
+        </div>
+    </body>
+</html>

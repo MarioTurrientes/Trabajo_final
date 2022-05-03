@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+  /*barrita anuncio*/
+  #anuncio{
+      color: red;
+      text-align: center;
+      height: 2vh;
+  }
+
+  /*---------Tipo de letra*/
+  a{
+    font-family: 'Permanent Marker';
+  }
+
+  h1{
+    font-family: 'Anton';
+  }
+
+  h3{
+    font-family: 'Bangers';
+  }
+
+  /*-------------Animacion--------------------------------------------*/
+  #anuncio{
+      animation-duration: 3s; /*duracion de la animacion*/
+      animation-name: slidein; /*tipo de animacion*/
+    }
+    @keyframes slidein {
+      from {
+        margin-left: 100%; /*sirve para indicar todo el recorrido que hará*/
+        width: 100%; 	/*ancho si no lo pongo el texto esta apelotonado*/
+      }
+    
+      to {
+        margin-left: 0%; /* hasta donde llega el movimiento*/
+        width: 100%;	/*lo mismo que antes se apelotona el texto al llegar al final*/
+      }
+    }
+
+  /*---------------------La localizacion-------------------------------*/
+  #pais{
+    margin-top: 2vh;
+    width: 1vw;
+    height: 2vh;
+  }
+
+  #localizar{
+    background-color: black;
+    color: white;
+    padding-left: 1vh;
+    padding-left: 2vw;
+  }
+
+  #localizar a{
+    color: white;
+  }
+
+  a:hover{
+    text-decoration: none;
+    color: red;
+  }
+
+  /*-------------------caja contenedora----------------------------*/
+  #contenedor{
+    background-color: black;
+    width: 100%;
+    height: 10vh;
+    margin-top: -2vh;
+    padding-top: 0.5vh;
+  }
+
+  /*-----------------buscador-------------------------------------*/
+  @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates);
+
+  .buscador{
+    display:flex;
+    margin-left: 70vw;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    width: 20%;
+    flex-direction:row;
+    box-shadow:
+    1px 1px 0 rgb(0, 0, 0);
+  }
+
+  .buscador>input[type=text],
+  .buscador>button {
+    display:block;
+    font:1.2em 'Montserrat Alternates';
+  }
+
+  .buscador>input[type=text] {
+    flex:1;
+    padding:0.6em;
+    border:0.2em solid rgb(0, 0, 0);
+  }
+
+  .buscador>button {
+    padding:0.6em 0.8em;
+    background-color:rgb(197, 197, 197);
+    color:rgb(0, 0, 0);
+    border:none;
+  }
+
+  /*-----------Menu-----------------------------------*/
+  #menu ul {  /*menu principal*/
+      list-style:none;
+      margin-left: 1vw;
+  }
+
+  #menu ul li {
+      background-color:#000000;
+  }
+
+  #menu ul a {
+      display:block;
+      color:#fff;
+      text-decoration:none;
+      font-size:2vw;
+      padding: 0.5vw;
+      font-family:"HelveticaNeue", "Helvetica Neue", Helvetica, sans-serif;
+      text-transform:uppercase; /*mayusculas las letras*/
+  }
+
+  #menu ul li {
+      position:relative;
+      float:left;
+  }
+    
+  #menu ul li:hover {
+      background: #d32424;
+  }
+
+  #menu ul ul {  /*EL desplegable del menu*/
+      display:none;
+      position:absolute;
+      top:100%;   /*el margen con el menu de arriba y el desplegable*/
+  }
+
+    #menu ul ul li { /*ancho*/
+      float:none;
+      width:14vw;
+  }
+    
+    #menu ul ul a {  /*largo*/
+      line-height:100%;
+      padding: 1vw 1vw;
+  }
+    
+    #menu ul li:hover > ul {
+      display:block;
+  }
+
+  /*--------------3 cajas grises------------------------*/
+  nav{
+    background-color:rgb(236, 235, 235);
+    width: 30.6%;
+    height: 4vh;
+    margin-top: 2vh;
+    text-align: center;
+    padding-top: 2vh;
+    margin-right: 2vw;
+    font-size: larger;
+  }
+
+  #izquierda{
+    float: left;
+    margin-left: 2vw;
+  }
+  #centro{
+    float: left;
+  }
+  #derecha{
+    float: right;
+  }
+
+  /*-------------fotos-------------------------*/
+  #foto1{
+    margin-left: 2vw;
+    margin-top: 3vh;
+    width: 30%;
+    height: 45vh;
+    background-image: url("Img/zapas1.jpg");
+    float: left;
+  }
+  #foto2{
+    margin-left: 2.7vw;
+    margin-top: 3vh;
+    width: 30%;
+    height: 45vh;
+    background-image: url("Img/zapas6.jpg");
+    float: left;
+  }
+  #foto3{
+    margin-right: 2vw;
+    margin-top: 3vh;
+    width: 30%;
+    height: 45vh;
+    background-image: url("Img/zapas7.jpg");
+    float: right;
+  }
+
+  .neon{
+    -moz-box-shadow: 0px 0px 30px #001aff;
+    -webkit-box-shadow: 0px 0px 30px #0077ff;
+    box-shadow: 0px 0px 30px #00a0fd;
+    border: 1px solid #0011ff;
+  }
+
+  /*-------------Enlace-------------------------------*/
+  #enlace{
+    margin-top: 3vh;
+    float: left;
+    margin-left: 42vw;
+    text-align: center;
+    font-size: x-large;
+  }
+
+
+  /*--------------Parte del calendario---------------------*/
+  #calendario{
+    width: 100%;
+    height: 35vh;
+    background-image: url("Img/calendario.jpg");
+    margin-top: 75vh;
+    color: white;
+    position: absolute;
+    text-align: center;
+  }
+
+  #caja_roja{
+    position: relative;
+    width: 7%;
+    height: 20vh;
+    margin-top: -18vh;
+  }
+
+  #caja_roja img{
+    position: absolute;
+    width: 100%;
+    height: 12vh;
+  }
+
+  h1{
+    padding-top: 10vh;
+    font-size: xx-large;
+  }
+
+  /*Parte Final*/
+  #final{
+    background-color: #000000;
+    width: 100%;
+    height: 60vh;
+    margin-top: 120vh;
+    color: white;
+    border-color: white;
+  }
+
+  #caja1{
+    display: inline-block;
+    width: 20%;
+    height: 30vh;
+    color: white;
+    margin-left: 1vw;
+    padding: 1vw;
+    border-right-style: solid;
+  }
+
+  #caja2{
+    display: inline-block;
+    width: 20%;
+    height: 30vh;
+    color: white;
+    margin-left: 1vw;
+    padding: 1vw;
+    border-right-style: solid;
+  }
+
+  #caja3{
+    display: inline-block;
+    width: 20%;
+    height: 30vh;
+    color: white;
+    margin-left: 1vw;
+    padding: 1vw;
+    border-right-style: solid;
+  }
+
+  #caja3 a{
+    color: white;
+  }
+
+  #caja4{
+    display: inline-block;
+    width: 20%;
+    height: 30vh;
+    color: white;
+    margin-top: 1vh;
+    margin-left: 1vw;
+    padding: 1vw;
+  }
+
+  #caja4 img{
+    width: 10%;
+    margin-left: 2vw;
+    margin-top: 5vh;
+  }
+
+  div h3{
+    text-decoration: underline; 
+    font-size: xx-large;
+  }
+
+  #final div ul li {
+    font-size: large;
+  }
+
+  /*-----------------Parte fija volver al inicio---------------*/
+  #fijo{
+    position: fixed;
+    width: 5%;
+    height: 3vh;
+    background-color:rgb(67, 192, 94);
+    text-align: center;
+    color: white;
+    right: 1vw;
+    bottom: 1vh;
+    padding-top: 1vh;	/*dejamos el enlace mas centrado en la caja*/
+    border-radius: 5em;	/* redondear los bordes de las caja*/
+  }
+
+  #fijo a{
+    text-decoration: none;
+  }
+
+  #fijo:hover{
+    background-color: Blue;
+  }
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------RESPONSIVE PARA MOVILES----------------------------------------------*/
+@media (max-width: 767px) {
+
+  /*----pais---------*/
+  #pais{
+    margin-top: 2vh;
+    width: 2vw;
+    height: 1vh;
+  }
+
+  /*---------caja contenedora del menu y buscador--------------*/
+  #contenedor{
+    height: 5vh;
+    padding-top: 1vh;
+  }
+
+  #menu{
+    margin-left: -7vw;
+  }
+
+  /*------------buscador------------------*/
+  .buscador{
+    margin-left: 45vw;
+    margin-top: -4vh;
+    margin-bottom: 3vh;
+    width: 1vw;
+    height: 3vh;
+  }
+
+  .buscador>button {
+    font-size: 80%;
+  }
+
+  /*-------3 cajas grises-----------------*/
+  nav{
+    width: 30.4%;
+    height: 7vh;
+    margin-top: 1vh;
+    padding-top: 1vh;
+    margin-right: 2vw;
+    font-size: 3vw;
+  }
+
+  /*----------fotos-----------------------------*/
+  #foto1{
+    height: 30vh;
+  }
+  #foto2{
+    height: 30vh;
+  }
+  #foto3{
+    height: 30vh;
+  }
+
+  /*---------Enlace y eslogan--------------------*/
+  #enlace{
+    margin-left: 25vw;
+  }
+
+  /*--------------Parte del calendario---------------------*/
+  #calendario{
+    height: 30vh;
+    margin-top: 65vh;
+    padding-top: 3vh;
+  }
+
+  #caja_roja{
+    width: 20%;
+    height: 20vh;
+    margin-top: -18vh;
+  }
+  
+  #caja_roja img{
+    height: 8vh;
+    width: 10vw;
+  }
+
+  h1{
+    font-size: 5vw;
+  }
+
+  /*---------------Parte Final----------------------------*/
+  #final{
+    height: 160vh;
+    margin-top: 110vh;
+    padding-left: 3vw;
+  }
+
+  #caja1{
+    display: inline;
+  }
+
+  #caja2{
+    display: inline;
+  }
+
+  #caja3{
+    display: inline;
+  }
+
+  #caja4{
+    display: inline;
+  }
+
+  /*-----------------Parte fija de chat---------------*/
+  #fijo{
+    width: 10%;
+  }
+}
+
+/*-------------------------------RESPONSIVE PARA TABLETS-----------------------*/
+@media (min-width: 768px) and (max-width: 1400px) {
+  
+  /*----pais---------*/
+  #pais{
+    margin-top: 2vh;
+    width: 2vw;
+    height: 2vh;
+  }
+
+  /*---------caja contenedora del menu y buscador--------------*/
+  #contenedor{
+    height: 8vh;
+    padding-top: 2vh;
+  }
+
+  /*------------buscador------------------*/
+  .buscador{
+    margin-left: 55vw;
+    height: 5vh;
+  }
+
+  /*-------3 cajas grises-----------------*/
+  nav{
+    width: 30.5%;
+  }
+
+  /*---------Enlace y eslogan--------------------*/
+  #enlace{
+    margin-left: 35vw;
+  }
+
+  /*--------------Parte del calendario---------------------*/
+  #calendario{
+    margin-top: 80vh;
+  }
+
+  #caja_roja{
+    width: 15%;
+  }
+
+  h1{
+    margin-left: 20vh;
+  }
+
+  /*---------------Parte Final----------------------------*/
+  #final{
+    height: 170vh;
+    margin-top: 130vh;
+    padding-left: 3vw;
+  }
+
+  #caja1{
+    display: inline;
+  }
+
+  #caja2{
+    display: inline;
+  }
+
+  #caja3{
+    display: inline;
+  }
+
+  #caja4{
+    display: inline;
+  }
+
+  /*-----------------Parte fija de chat---------------*/
+  #fijo{
+    width: 10%;
+  }
+
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+
+#caja{
+    background-color: black;
+    border-color: red;
+    width: 50%;
+    min-height: 100vh;
+    margin-left: 25vw;
+    padding-right: 2vw;
+    padding-left: 2vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    color: white;
+}
+
+p{
+    overflow: scroll;
+    height: 12vh;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Permanent Marker';
+}
+
+fieldset{
+    color: red;
+}
+
+#boton{
+    margin-left: 15vw;
+    width: 8vw;
+    height: 5vh;
+    font-size: x-large;
+}
+
+#boton1{
+    width: 8vw;
+    height: 5vh;
+    font-size: x-large;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------*/
+/*---------------------------RESPONSIVE PARA MOVILES----------------------------------------------*/
+@media (max-width: 767px) {
+    #caja{
+        width: 90%;
+        height: 130vh;
+        margin-left: 3vw;
+    }
+
+    #boton{
+        margin-left: 25vw;
+        width: 15vw;
+        font-size: 3vw;
+    }
+
+    #boton1{
+        width: 15vw;
+        font-size: 3vw;
+    }
+}
+
+/*-------------------------------RESPONSIVE PARA TABLETS-----------------------*/
+@media (min-width: 768px) and (max-width: 1400px) {
+    #caja{
+        width: 90%;
+        height: 140vh;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+
+    #boton{
+        margin-left: 25vw;
+        width: 20vw;
+        font-size: 3vw;
+    }
+
+    #boton1{
+        width: 20vw;
+        font-size: 3vw;
+    }
+}
