@@ -17,11 +17,13 @@ section{
     background-size: cover;
     margin-top: 2vh;
 }
+#foto1 img{
+    width: 100%;
+}
 
 #foto1{
-    background-color: brown;
     grid-column: 1/3;
-    background-image: url("img/zapas6.jpg");
+    overflow: hidden;
 }
 #foto2{
     background-color: chartreuse;
